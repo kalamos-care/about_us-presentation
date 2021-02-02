@@ -1,4 +1,11 @@
-<h6><a href="https://about.kalamos.care/">Visit me</a></h6>
+<h5><a href="https://about.kalamos.care/">Visit me</a></h5>
+
+<hr>
+
+<h6>Porting our presentation over to Github Pages using Reveal.js to make it more accessible</h6>
+
+<hr>
+
 <p align="center">
   <a href="https://revealjs.com">
   <img src="https://hakim-static.s3.amazonaws.com/reveal-js/logo/v1/reveal-black-text.svg" alt="reveal.js" width="450">
