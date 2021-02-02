@@ -16,12 +16,12 @@ html * {
  *********************************************/
 :root {
   --background-color: #fdf6e3;
-  --main-font: Lato, sans-serif;
+  --main-font: Arimo, sans-serif;
   --main-font-size: 40px;
   --main-color: #657b83;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: League Gothic, Impact, sans-serif;
+  --heading-font: GT Haptik, Impact, sans-serif;
   --heading-color: #586e75;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
@@ -44,7 +44,7 @@ html * {
   background-color: #fdf6e3; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #657b83; }
@@ -75,7 +75,7 @@ html * {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #586e75;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "GT Haptik", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;

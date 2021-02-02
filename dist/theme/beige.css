@@ -13,12 +13,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
  *********************************************/
 :root {
   --background-color: #f7f3de;
-  --main-font: Lato, sans-serif;
+  --main-font: Arimo, sans-serif;
   --main-font-size: 40px;
   --main-color: #333;
   --block-margin: 20px;
   --heading-margin: 0 0 20px 0;
-  --heading-font: League Gothic, Impact, sans-serif;
+  --heading-font: GT Haptik, Impact, sans-serif;
   --heading-color: #333;
   --heading-line-height: 1.2;
   --heading-letter-spacing: normal;
@@ -47,7 +47,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   background-color: #f7f3de; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Arimo", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #333; }
@@ -78,7 +78,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "GT Haptik", Impact, sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
