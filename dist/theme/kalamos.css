@@ -10,14 +10,14 @@
   * GLOBAL STYLES
   *********************************************/
  :root {
-   --background-color: #f7f3de;
+   --background-color: #f4effc;
    --main-font: Arimo, sans-serif;
    --main-font-size: 40px;
-   --main-color: #333;
+   --main-color: #1b1325;
    --block-margin: 20px;
    --heading-margin: 0 0 20px 0;
    --heading-font: GT-Haptik-Medium;
-   --heading-color: #333;
+   --heading-color: #1f1135;
    --heading-line-height: 1.2;
    --heading-letter-spacing: normal;
    --heading-text-transform: uppercase;
@@ -29,8 +29,8 @@
    --heading3-size: 1.55em;
    --heading4-size: 1em;
    --code-font: monospace;
-   --link-color: #8b743d;
-   --link-color-hover: #c0a86e;
+   --link-color: #ff6e6c;
+   --link-color-hover: #ff6e6c;
    --selection-background-color: rgba(79, 64, 28, 0.99);
    --selection-color: #fff; }
  
@@ -45,7 +45,7 @@
    background-color: #f7f3de; }
  
  .reveal {
-   font-family: "Lato", sans-serif;
+   font-family: "GT-Haptik-Medium";
    font-size: 40px;
    font-weight: normal;
    color: #333; }
@@ -76,7 +76,7 @@
  .reveal h6 {
    margin: 0 0 20px 0;
    color: #333;
-   font-family: "League Gothic", Impact, sans-serif;
+   font-family: "GT-Haptik-Medium"
    font-weight: normal;
    line-height: 1.2;
    letter-spacing: normal;
