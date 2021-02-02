@@ -16,7 +16,7 @@
    --main-color: #1b1325;
    --block-margin: 20px;
    --heading-margin: 0 0 20px 0;
-   --heading-font: GT-Haptik-Medium;
+   --heading-font: GT Haptik;
    --heading-color: #1f1135;
    --heading-line-height: 1.2;
    --heading-letter-spacing: normal;
@@ -45,7 +45,7 @@
    background-color: #f4effc; }
  
  .reveal {
-   font-family: "GT-Haptik-Medium";
+   font-family: "GT Haptik";
    font-size: 40px;
    font-weight: normal;
    color: #333; }
