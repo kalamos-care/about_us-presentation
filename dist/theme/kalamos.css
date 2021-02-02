@@ -1,7 +1,7 @@
 /**
  * Kalamos theme for reveal.js.
 */
- @import url(./fonts/league-gothic/gt-haptik.css);
+ @import url(./fonts/gt-haptik/gt-haptik.css);
  @import url(https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic);
  section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
    color: #fff; }
@@ -35,14 +35,14 @@
    --selection-color: #fff; }
  
  .reveal-viewport {
-   background: #f7f2d3;
+   background: #f4effc;
    background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
    background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
    background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
    background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
    background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-   background-color: #f7f3de; }
+   background-color: #f4effc; }
  
  .reveal {
    font-family: "GT-Haptik-Medium";
