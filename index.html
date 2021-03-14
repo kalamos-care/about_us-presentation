@@ -33,9 +33,13 @@
 					</section>
 					<section>
 						<h2>PrEPMate</h2>
+						<p style="text-align:right;">created by <a href="mailto:albert.liu@sfdph.org">Albert Liu</a></p>
+						<h6 style="align-text:left;">PrEPmate is a multicomponent mobile health (mHealth) intervention that consists of shortmessage service (SMS) and youth-tailored interactive online content to enhance PrEP adherence among HIV-negative, at-risk YMSM.</h6>
 					</section>
 					<section>
 						<h2>iTAB</h2>
+						<p style="text-align:right;">created by <a href="mailto:shmorris@ucsd.edu">Sheldon R. Morris</a></p>
+						<h6 style="align-text:left;">iTAB is an individual-level, mobile-health intervention that uses two-way, fully automated daily personalized health promotion and “factoid” text messages to improve PrEP adherence.</h6>
 					</section>
 					<section>
 						<h2>PrEP Counseling Center*</h2>
@@ -55,39 +59,75 @@
 				<section data-background="#301e4e">
 					<section>
 						<section>
-							<h3>Kalamos provides a robust set of APIs to deploy evidence-based intervention research through existing health record systems</h3>
+							<h3>Kalamos provides a robust set of APIs</h3>
+							<h3>to deploy evidence-based interventions</h3>
+							<h3>through existing health record systems</h3>
 						</section>
 						<section>
-							<h4>Patient Matching API</h4>
+							<h4>Patient Survey API</h4>
+							<p>Gather data from patients to inform your intervention models.</p>
+							<pre><code data-trim data-noescape>
+							curl -X 'POST' \
+							  'https://app.kala.care/api/v1/survey' \
+							  -H 'accept: application/json' \
+							  -H 'Content-Type: application/json-fhir' \
+							  -d '{
+							  	"patient_id": "string",
+								"survey": {
+									"question_1": "string",
+								},
+							  }'
+							</code></pre>
 						</section>
 						<section>
-							<h4>Communication API</h4>
+							<h4>Patient Intervention Matching API</h4>
+							<p>Determine which evidence-based interventions are best suited for your patient based on demographics.</p>
+							<pre><code data-trim data-noescape>
+							curl -X 'POST' \
+							  'https://app.kala.care/api/v1/intervention-match' \
+							  -H 'accept: application/json' \
+							  -H 'Content-Type: application/json-fhir' \
+							  -d '{
+							  	"patient_id": "string",
+							  }'
+							</code></pre>
+						</section>
+						<section>
+							<h4>Remote Diagnostics API</h4>
+							<p>Monitor patient health/adherence with sample collection kits delivered directly to their home.</p>
+							<h6 style="text-align:left;">powered by Molecular Testing Labs</h6>
+						</section>
+						<section>
+							<h4>Pharmacy API</h4>
+							<p>Trigger medication fulfillment</h4>
 						</section>
 						<section>
 							<h4>Incentive API</h4>
+							<p>Deliver incentives to your patients for participation/adherence</h4>
 						</section>
 						<section>
 							<h4>Billing API</h4>
+							<p>Seamlessly manage payments to intervention developers based on paient usage.</p>
 						</section>
 					</section>
 				</section>
 				
 				<!-- Slide 4 -->
 				<section data-background="#301e4e">
-					<h5>Billions are wasted yearly on medication non-adherence</h5>
-					<h3>We optimize pharmaceutical costs</h3>
-					<h4>by matching patients with CDC-recommended medication adherence interventions</h4>
+					<h5>Every year, billions are wasted due to medication non-adherence.</h5>
+					<h3 class="r-fit-text">We optimize pharmaceutical-focused outcomes</h3>
+					<h4>by matching patients with CDC-recommended medication adherence interventions.</h4>
 				</section>
 				
 				<!-- Slide 5 -->
 				<section>
 					<h3>The CDC's <u>one</u> EBI for Diabetes Prevention<br />has spawned an entired marketplace of companies</h3>
-					<p>insert images of Omada, Noom, etc.</p>
+					<img class="r-stretch" src="/images/diabetes_companies.png">
 				</section>
 				
 				<!-- Slide 6 -->
 				<section>
-					<h3>And yet, none exist for HIV</h3>
+					<h3>And yet, few exist for HIV</h3>
 					<h4>or infectious disease more broadly</h4>
 				</section>
 				
@@ -102,15 +142,20 @@
 						<li><strong style="color:#1f1135;">S</strong>ystems</li>
 					</ul>
 				</section>
-				
+		
 				<!-- Slide 8 -->
+				<section>
+					<p>insert diagram of how the process works</p>
+				</section>
+				
+				<!-- Slide 9 -->
 				<section>
 					<h3>History</h3>
 					<p style="text-align:left;">Kalamos was founded to reduce the barriers to HIV treatment and prevention through home testing and medication delivery.</p>
 					<p style="text-align:left;">We believe integrating behavioral change frameworks will increase persistence and adherence, and thus, population health.</p>
 				</section>
 				
-				<!-- Slide 9 -->
+				<!-- Slide 10 -->
 				<section>
 					<h4>Recommendations alone do not work.</h4>
 					<img src="dist/theme/images/slide_10/flatten_the_curve.jpg" class="r-stretch">
