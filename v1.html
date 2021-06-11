@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>About Kalamos Care</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/kalamos.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Slide 1 -->
+				<section>
+					<h2 class="r-fit-text">Kalamos Care</h2>
+					<h6 style="text-align:right;">Prescribing Pride</h6>
+					<h4 style="padding-top:2rem;">An app store for sexual health evidence-based interventions</h4>
+					<a href="https://github.com/kalamos-care"><img src="/images/GitHub-Mark-64px.png"></a>
+				</section>
+				
+				<!-- Slide 2 -->
+				<section data-background="#301e4e">
+					<section>
+						<h6 style="color:#f4f0fc;">The US still has 40,000 new HIV infections every year, and 1 in 5 Americans is currently living with an STI.</h6>
+						<h4 style="color:#f4f0fc;">The NIH spent $3.5B researching HIV treatment and prevention in 2020.</h4>
+						<h3 style="padding-top:2rem;">Lack of interventions aren't the problem.</h3>
+						<h3 class="r-fit-text" style="color:#ff6e6c;">Their implementation is.</h3>
+					</section>
+					<section>
+						<h2 class="r-fit-text">PrEPMate</h2>
+						<p style="text-align:right;">created by <a href="mailto:albert.liu@sfdph.org">Albert Liu</a></p>
+						<h6 style="text-align:left;">PrEPmate is a multicomponent mobile health (mHealth) intervention that consists of shortmessage service (SMS) and youth-tailored interactive online content to enhance PrEP adherence among HIV-negative, at-risk YMSM.</h6>
+					</section>
+					<section>
+						<h2 class="r-fit-text">iTAB</h2>
+						<p style="text-align:right;">created by <a href="mailto:shmorris@ucsd.edu">Sheldon R. Morris</a></p>
+						<h6 style="text-align:left;">iTAB is an individual-level, mobile-health intervention that uses two-way, fully automated daily personalized health promotion and “factoid” text messages to improve PrEP adherence.</h6>
+					</section>
+					<section>
+						<h2>PrEP Counseling Center*</h2>
+						<p>*evidence-informed</p>
+					</section>
+					<section>
+						<h2>Lifesteps for PrEP*</h2>
+						<p>*evidence-informed</p>
+					</section>
+					<section>
+						<h2>iText*</h2>
+						<p>*evidence-informed</p>
+					</section>
+				</section>
+				
+				<!-- Slide 3 -->
+				<section data-background="#301e4e">
+						<section>
+							<h3>SMART on FHIR</h3>
+							<h5>means CDC-approved behavioral health interventions can be prescribed and managed wihtout a provider leaving their EMR.</h5>
+						</section>
+						<section>
+							<h4>Patient Survey API</h4>
+							<p>Gather data from patients to inform your intervention models.</p>
+							<pre><code data-trim data-noescape>
+							curl -X 'POST' \
+							  'https://app.kala.care/api/v1/survey' \
+							  -H 'accept: application/json' \
+							  -H 'Content-Type: application/json-fhir' \
+							  -d '{
+							  	"patient_id": "string",
+								"survey": {
+									"question_1": "string",
+								},
+							  }'
+							</code></pre>
+						</section>
+						<section>
+							<h4>Patient Intervention Matching API</h4>
+							<p>Determine which evidence-based interventions are best suited for your patient based on demographics.</p>
+							<pre><code data-trim data-noescape>
+							curl -X 'POST' \
+							  'https://app.kala.care/api/v1/intervention-match' \
+							  -H 'accept: application/json' \
+							  -H 'Content-Type: application/json-fhir' \
+							  -d '{
+							  	"patient_id": "string",
+							  }'
+							</code></pre>
+						</section>
+						<section>
+							<h4>Remote Diagnostics API</h4>
+							<p>Monitor patient health/adherence with sample collection kits delivered directly to their home.</p>
+							<h6 style="text-align:right;">powered by Molecular Testing Labs</h6>
+						</section>
+						<section>
+							<h4>Pharmacy API</h4>
+							<p>Trigger medication fulfillment</h4>
+						</section>
+						<section>
+							<h4>Incentive API</h4>
+							<p>Deliver incentives to your patients for participation/adherence</h4>
+						</section>
+						<section>
+							<h4>Billing API</h4>
+							<p>Seamlessly manage payments to intervention developers based on paient usage.</p>
+						</section>
+				</section>
+				
+				<!-- Slide 4 -->
+				<section data-background="#301e4e">
+					<h5>Every year, billions are wasted due to medication non-adherence</h5>
+					<h4>The regular adoption of evidence-based, automated, interventions will revolutionize healthcare</h4>
+				</section>
+				
+				<!-- Slide 5 -->
+				<section>
+					<h3>The CDC's <u>one</u> EBI for Diabetes Prevention<br />has spawned an entired marketplace of companies</h3>
+					<img class="r-stretch" src="/images/diabetes_companies.png">
+					<h6>A $10B industry from one intervention.</h6>
+				</section>
+				
+				<!-- Slide 6 -->
+				<section>
+					<h3>And yet, none exist for HIV</h3>
+					<h4>or infectious disease more broadly</h4>
+					<h3 style="padding-top:1em;"></h3>
+				</section>
+				
+				<!-- Slide 7 -->
+				<section>
+					<h3>It's time to put PrEP patients through their PACES</h3>
+					<ul style="list-style:none; font-size:3rem;">
+						<li><strong style="color:#1f1135;">P</strong>rEP</li>
+						<li><strong style="color:#1f1135;">A</strong>dherence</li>
+						<li><strong style="color:#1f1135;">C</strong>apitalizing on</li>
+						<li><strong style="color:#1f1135;">E</strong>xisting</li>
+						<li><strong style="color:#1f1135;">S</strong>ystems</li>
+					</ul>
+					<h6>Intervention matching and implementation, entirely through existing healthcare apps</h6>
+				</section>
+		
+				<!-- Slide 8 -->
+				<section>
+					<h6>Among the highest risk populations, HIV prevention medication without adhernece support actually increases the rate of HIV infections</h6>
+					<h4>Any patient should have easy access to adherence assistance and be rewarded for it</h4>
+					<!-- <img src="/images/Adherence%20interventions.png" class="r-stretch"> -->
+				</section>
+				
+				<!-- Slide 9 -->
+				<section>
+					<h3>I STARTED KALAMOS BECAUSE SEX SCARED THE $@*! OUT OF ME</h3>
+					<p style="text-align:left;">One morning I woke up to a burning sensation. Half-convinced my life was over, I shamefully walked into a clinic. The care I received that day changed my life.</p>
+					<p style="text-align:left;">I knew then that I wanted everyone to experience feeling loved and cared for in a moment of need. I wanted to empower my community. I wanted to replace fear with Pride.</p>
+					<p style="text-align:left;">I played professional football and found my way out of the closet, but tackling our sexual wellness shame is the most audacious, exciting challenge I’ve ever faced.</p>
+					<p style="text-align:left;">I hope you’ll join the fight with me.</p>
+					<!--
+					<p style="text-align:left;">Kalamos was founded to reduce the barriers to HIV treatment and prevention through home testing and medication delivery.</p>
+					<p style="text-align:left;">We believe integrating behavioral change frameworks will increase persistence and adherence, and thus, population health.</p>
+					-->
+				</section>
+				
+				<!-- Slide 10 -->
+				<section>
+					<h4>Recommendations alone do not work.</h4>
+					<img src="dist/theme/images/slide_10/flatten_the_curve.jpg" class="r-stretch">
+					<h4>But with the right interventions, we can save millions of lives.</h4>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
